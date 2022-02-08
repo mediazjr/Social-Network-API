@@ -1,7 +1,7 @@
 const { User } = require("../models");
 
 module.exports = {
-    // find all
+// find all
     getAllUsers(req, res) {
         User.find()
             .populate('thoughts')
